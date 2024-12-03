@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Nicole Cahoon, CPA</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,31 +19,20 @@
                 <ul id="primary-menu" class="menu">
                     <!-- Services Dropdown -->
                     <li class="menu-item menu-item-has-children">
-                        
                         <ul class="sub-menu">
-                            <li><a href="#accounting-services">Accounting Services</a></li>
-                            <li class="current-menu-item"><a href="#tax-services">Tax Services</a></li>
-                            <li><a href="#business-consulting">Business Consulting</a></li>
+                            <li><a href="#accounting-overview" onclick="showContent('accountingOverview')">Accounting Services</a></li>
+                            <li class="current-menu-item"><a href="#tax-services" onclick="showContent('taxServices')">Tax Services</a></li>
+                            <li><a href="#business-consulting" onclick="showContent('businessConsulting')">Business Consulting</a></li>
                         </ul>
                     </li>
 
-                    <!-- Our Team Menu -->
+                    <!-- Other Menus -->
                     <li class="menu-item"><a href="service.html">Service</a></li>
                     <li class="menu-item"><a href="our-team.html">Our Team</a></li>
-
-                    <!-- Contact Us Menu -->
                     <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-
-                    <!-- BC Financial Resources Menu -->
                     <li class="menu-item"><a href="bc-financial-resources.html">BC Financial Resources</a></li>
-
-                    <!-- Testimonials Menu -->
                     <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
-
-                    <!-- Tax Checklist Menu -->
                     <li class="menu-item"><a href="tax-checklist.html">Tax Checklist</a></li>
-
-                    <!-- Facebook Menu -->
                     <li class="menu-item"><a href="https://facebook.com/nicolecahooninc" target="_blank">Facebook</a></li>
                 </ul>
             </nav>
@@ -51,10 +40,9 @@
     </header>
 
     <div class="hero">
-        <img src="NICO 2.png" alt="Professional Tax Services">
+        <img src="images/nick22.jpg" alt="Professional Tax Services">
         <div class="hero-text">
-            <h1>Professional Tax Services</h1>
-            <p>Helping you optimize your financial strategies</p>
+            <h1> Services</h1>
         </div>
     </div>
 
@@ -62,27 +50,62 @@
         <div class="container">
             <h2>Our Services</h2>
             <div class="services-grid">
-                <div>
-                    <h3>Accounting Services</h3>
-                    <p>Streamlined financial management and bookkeeping.</p>
+                <!-- Updated IDs -->
+                <div id="accountingOverview" class="service-detail">
+                    <h3>Nicole Cahoon CPA</h3>
+                    <p>Nicole Cahoon, CPA offers a full range of accounting and bookkeeping services to small and mid-sized businesses in Courtenay, Comox, Cumberland and all neighbouring towns in the Comox Valley.</p>
+                    <p>At Nicole Cahoon, CPA we are committed to provide a variety of services to meet the needs of our clients by fostering an environment that encourages personal and professional growth. We are dedicated to provide excellent customer service by focusing on the three underlying principles of professionalism, responsiveness and quality. We specialize in small to medium size businesses in the Comox Valley and surrounding areas.</p>
                 </div>
-                <div>
+
+                <div id="accountingServices" class="service-detail">
+                    <h3>Comox Valley Accounting Services</h3>
+                    <p>We provide constructive solutions for maximizing your company’s profitability.</p>
+                    <ul>
+                        <li>Corporate Year Ends - Financial Statement Preparation</li>
+                        <li>Corporate Tax Returns</li>
+                        <li>Canadian Tax Returns for Individuals</li>
+                        <li>Tax Planning</li>
+                        <li>Estate Planning</li>
+                    </ul>
+                    <p>For more information, or to book an appointment call our office today!</p>
+                </div>
+
+                <div id="businessConsulting" class="service-detail">
+                    <h3>Business Consulting Services</h3>
+                    <p>We can help your business identify areas that are affecting profitability and growth and we can develop solutions. In addition to working with management, we provide strategies that address the issues affecting your business. Some of the consulting services we offer include:</p>
+                    <ul>
+                        <li>Business Valuation</li>
+                        <li>Business Succession Planning</li>
+                        <li>Mergers and Acquisitions</li>
+                    </ul>
+                    <p>For more information, or to book an appointment call our office today!</p>
+                </div>
+
+                <div id="taxServices" class="service-detail">
                     <h3>Tax Services</h3>
-                    <p>Personal and corporate tax planning and preparation.</p>
-                </div>
-                <div>
-                    <h3>Business Consulting</h3>
-                    <p>Strategies to grow and enhance your business.</p>
+                    <p>Here at Nicole Cahoon CPA we can develop tax – minimization strategies to optimize our Comox Valley and North Island clients after – tax position.</p>
+                    <ul>
+                        <li>Personal and Corporate Tax Returns</li>
+                        <li>Tax Planning</li>
+                        <li>Estate Planning</li>
+                        <li>Family Trusts</li>
+                        <li>Tax Compliance</li>
+                    </ul>
+                    <p>For more information regarding our services, call or email us today!</p>
                 </div>
             </div>
         </div>
     </div>
-
     <footer>
         <div class="container">
             <p>Email: <a href="mailto:nicole@nicolecahoon.com">nicole@nicolecahoon.com</a></p>
             <p>Phone: 250-871-1121</p>
             <p>&copy; 2024 Nicole Cahoon, CPA</p>
+            <p>
+                This is a fictional website that was designed and coded as an educational exercise. 
+                It is not intended to be seen outside of the class environment. 
+                None of the content and images were approved by the business owner.
+            </p>
         </div>
     </footer>
 </body>
